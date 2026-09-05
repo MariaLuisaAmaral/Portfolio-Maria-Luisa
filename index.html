@@ -9,6 +9,12 @@
 
     <link rel="icon" type="image/png" href="favicon-32x32.png">
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .ferramenta-logo-mono {
+            filter: grayscale(1) brightness(0) invert(1);
+        }
+    </style>
 </head>
 
 <body>
@@ -532,209 +538,610 @@
 
         </section>
 
-    </main>
 
+        <!-- ========================= -->
+        <!-- JANELA HABILIDADES -->
+        <!-- ========================= -->
 
-    <!-- ========================= -->
-    <!-- JANELA HABILIDADES -->
-    <!-- ========================= -->
+        <section
+            class="janela"
+            id="janela-habilidades"
+        >
 
-    <section
-        class="janela"
-        id="janela-habilidades"
-    >
+            <div class="janela-barra">
 
-        <div class="janela-barra">
+                <div class="janela-titulo">
+                    HABILIDADES
+                </div>
 
-            <div class="janela-titulo">
-                HABILIDADES
-            </div>
+                <div class="janela-controles">
 
-            <div class="janela-controles">
+                    <button
+                        type="button"
+                        onclick="minimizarJanela('habilidades')"
+                        title="Minimizar"
+                    >
+                        −
+                    </button>
 
-                <button
-                    type="button"
-                    onclick="minimizarJanela('habilidades')"
-                    title="Minimizar"
-                >
-                    −
-                </button>
+                    <button
+                        type="button"
+                        onclick="fecharJanela('habilidades')"
+                        title="Fechar"
+                    >
+                        ×
+                    </button>
 
-                <button
-                    type="button"
-                    onclick="fecharJanela('habilidades')"
-                    title="Fechar"
-                >
-                    ×
-                </button>
-
-            </div>
-
-        </div>
-
-
-        <div class="janela-conteudo">
-
-            <div class="habilidades-lista">
-
-                <p>
-                    HTML5
-                </p>
-
-                <p>
-                    CSS3
-                </p>
-
-                <p>
-                    JavaScript
-                </p>
-
-                <p>
-                    ECMAScript
-                </p>
-
-                <p>
-                    GitHub
-                </p>
-
-                <p>
-                    Inglês — C1
-                </p>
+                </div>
 
             </div>
 
-        </div>
 
-    </section>
+            <div class="janela-conteudo">
 
+                <div class="habilidades-lista">
 
-    <!-- ========================= -->
-    <!-- JANELA FERRAMENTAS -->
-    <!-- ========================= -->
+                    <p>
+                        HTML5
+                    </p>
 
-    <section
-        class="janela janela-ferramentas"
-        id="janela-ferramentas"
-    >
+                    <p>
+                        CSS3
+                    </p>
 
-        <div class="janela-barra">
+                    <p>
+                        JavaScript
+                    </p>
 
-            <div class="janela-titulo">
-                FERRAMENTAS
-            </div>
+                    <p>
+                        TypeScript
+                    </p>
 
-            <div class="janela-controles">
+                    <p>
+                        ECMAScript
+                    </p>
 
-                <button
-                    type="button"
-                    onclick="minimizarJanela('ferramentas')"
-                    title="Minimizar"
-                >
-                    −
-                </button>
+                    <p>
+                        GitHub
+                    </p>
 
-                <button
-                    type="button"
-                    onclick="fecharJanela('ferramentas')"
-                    title="Fechar"
-                >
-                    ×
-                </button>
+                    <p>
+                        Inglês — C1
+                    </p>
+
+                </div>
 
             </div>
 
-        </div>
+        </section>
 
 
-        <div class="janela-conteudo ferramentas-conteudo">
+        <!-- ========================= -->
+        <!-- JANELA FERRAMENTAS -->
+        <!-- ========================= -->
+
+        <section
+            class="janela janela-ferramentas"
+            id="janela-ferramentas"
+        >
+
+            <div class="janela-barra">
+
+                <div class="janela-titulo">
+                    FERRAMENTAS
+                </div>
+
+                <div class="janela-controles">
+
+                    <button
+                        type="button"
+                        onclick="minimizarJanela('ferramentas')"
+                        title="Minimizar"
+                    >
+                        −
+                    </button>
+
+                    <button
+                        type="button"
+                        onclick="fecharJanela('ferramentas')"
+                        title="Fechar"
+                    >
+                        ×
+                    </button>
+
+                </div>
+
+            </div>
 
 
-            <!-- ========================= -->
-            <!-- DESENVOLVIMENTO -->
-            <!-- ========================= -->
-
-            <div class="ferramenta-categoria">
-
-                <h3>
-                    Desenvolvimento
-                </h3>
+            <div class="janela-conteudo ferramentas-conteudo">
 
 
-                <div class="ferramentas-grid">
+                <!-- ========================= -->
+                <!-- DESENVOLVIMENTO -->
+                <!-- ========================= -->
+
+                <div class="ferramenta-categoria">
+
+                    <h3>
+                        Desenvolvimento
+                    </h3>
 
 
-                    <div class="ferramenta-item">
+                    <div class="ferramentas-grid">
 
-                        <div class="ferramenta-logo-box">
 
-                            <img
-                                class="ferramenta-logo"
-                                src="icons/vscode.svg"
-                                alt="Visual Studio Code"
-                            >
+                        <!-- VISUAL STUDIO CODE -->
+
+                        <div class="ferramenta-item">
+
+                            <div class="ferramenta-logo-box">
+
+                                <img
+                                    class="ferramenta-logo ferramenta-logo-mono"
+                                    src="icons/vscode-plain.svg"
+                                    alt="Visual Studio Code"
+                                    onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg';"
+                                >
+
+                            </div>
+
+                            <span>
+                                Visual Studio Code
+                            </span>
 
                         </div>
 
-                        <span>
-                            Visual Studio Code
-                        </span>
+
+                        <!-- GITHUB -->
+
+                        <div class="ferramenta-item">
+
+                            <div class="ferramenta-logo-box">
+
+                                <img
+                                    class="ferramenta-logo ferramenta-logo-mono"
+                                    src="icons/github-plain.svg"
+                                    alt="GitHub"
+                                    onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg';"
+                                >
+
+                            </div>
+
+                            <span>
+                                GitHub
+                            </span>
+
+                        </div>
+
+
+                        <!-- GITHUB DESKTOP -->
+
+                        <div class="ferramenta-item">
+
+                            <div class="ferramenta-logo-box">
+
+                                <img
+                                    class="ferramenta-logo ferramenta-logo-mono"
+                                    src="icons/github-desktop.svg"
+                                    alt="GitHub Desktop"
+                                >
+
+                            </div>
+
+                            <span>
+                                GitHub Desktop
+                            </span>
+
+                        </div>
+
+
+                        <!-- NODE.JS -->
+
+                        <div class="ferramenta-item">
+
+                            <div class="ferramenta-logo-box">
+
+                                <img
+                                    class="ferramenta-logo ferramenta-logo-mono"
+                                    src="icons/nodejs-plain.svg"
+                                    alt="Node.js"
+                                    onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg';"
+                                >
+
+                            </div>
+
+                            <span>
+                                Node.js
+                            </span>
+
+                        </div>
+
+
+                        <!-- ELECTRON -->
+
+                        <div class="ferramenta-item">
+
+                            <div class="ferramenta-logo-box">
+
+                                <img
+                                    class="ferramenta-logo ferramenta-logo-mono"
+                                    src="icons/electron-plain.svg"
+                                    alt="Electron"
+                                    onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/electron/electron-original.svg';"
+                                >
+
+                            </div>
+
+                            <span>
+                                Electron
+                            </span>
+
+                        </div>
+
+
+                        <!-- REACT -->
+
+                        <div class="ferramenta-item">
+
+                            <div class="ferramenta-logo-box">
+
+                                <img
+                                    class="ferramenta-logo ferramenta-logo-mono"
+                                    src="icons/react-plain.svg"
+                                    alt="React"
+                                    onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg';"
+                                >
+
+                            </div>
+
+                            <span>
+                                React
+                            </span>
+
+                        </div>
 
                     </div>
 
+                </div>
 
-                    <div class="ferramenta-item">
 
-                        <div class="ferramenta-logo-box">
+                <!-- ========================= -->
+                <!-- DESIGN -->
+                <!-- ========================= -->
 
-                            <img
-                                class="ferramenta-logo"
-                                src="icons/github.svg"
-                                alt="GitHub"
-                            >
+                <div class="ferramenta-categoria">
+
+                    <h3>
+                        Design
+                    </h3>
+
+
+                    <div class="ferramentas-grid">
+
+
+                        <!-- FIGMA -->
+
+                        <div class="ferramenta-item">
+
+                            <div class="ferramenta-logo-box">
+
+                                <img
+                                    class="ferramenta-logo ferramenta-logo-mono"
+                                    src="icons/figma-plain.svg"
+                                    alt="Figma"
+                                    onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg';"
+                                >
+
+                            </div>
+
+                            <span>
+                                Figma
+                            </span>
 
                         </div>
 
-                        <span>
-                            GitHub
-                        </span>
+
+                        <!-- CANVA -->
+
+                        <div class="ferramenta-item">
+
+                            <div class="ferramenta-logo-box">
+
+                                <img
+                                    class="ferramenta-logo ferramenta-logo-mono"
+                                    src="icons/canva-plain.svg"
+                                    alt="Canva"
+                                    onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg';"
+                                >
+
+                            </div>
+
+                            <span>
+                                Canva
+                            </span>
+
+                        </div>
 
                     </div>
 
+                </div>
 
-                    <div class="ferramenta-item">
 
-                        <div class="ferramenta-logo-box">
+                <!-- ========================= -->
+                <!-- DEPLOY -->
+                <!-- ========================= -->
 
-                            <img
-                                class="ferramenta-logo"
-                                src="icons/github-desktop.svg"
-                                alt="GitHub Desktop"
-                            >
+                <div class="ferramenta-categoria">
+
+                    <h3>
+                        Deploy
+                    </h3>
+
+
+                    <div class="ferramentas-grid">
+
+
+                        <!-- VERCEL -->
+
+                        <div class="ferramenta-item">
+
+                            <div class="ferramenta-logo-box">
+
+                                <img
+                                    class="ferramenta-logo ferramenta-logo-mono"
+                                    src="icons/vercel-plain.svg"
+                                    alt="Vercel"
+                                    onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg';"
+                                >
+
+                            </div>
+
+                            <span>
+                                Vercel
+                            </span>
 
                         </div>
 
-                        <span>
-                            GitHub Desktop
-                        </span>
+
+                        <!-- GITHUB PAGES -->
+
+                        <div class="ferramenta-item">
+
+                            <div class="ferramenta-logo-box">
+
+                                <img
+                                    class="ferramenta-logo ferramenta-logo-mono"
+                                    src="icons/github-pages.svg"
+                                    alt="GitHub Pages"
+                                >
+
+                            </div>
+
+                            <span>
+                                GitHub Pages
+                            </span>
+
+                        </div>
 
                     </div>
 
+                </div>
 
-                    <div class="ferramenta-item">
 
-                        <div class="ferramenta-logo-box">
+                <!-- ========================= -->
+                <!-- ORGANIZAÇÃO -->
+                <!-- ========================= -->
 
-                            <img
-                                class="ferramenta-logo"
-                                src="icons/nodejs.svg"
-                                alt="Node.js"
-                            >
+                <div class="ferramenta-categoria">
+
+                    <h3>
+                        Organização
+                    </h3>
+
+
+                    <div class="ferramentas-grid">
+
+
+                        <!-- NOTION -->
+
+                        <div class="ferramenta-item">
+
+                            <div class="ferramenta-logo-box">
+
+                                <img
+                                    class="ferramenta-logo ferramenta-logo-mono"
+                                    src="icons/notion-plain.svg"
+                                    alt="Notion"
+                                    onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg';"
+                                >
+
+                            </div>
+
+                            <span>
+                                Notion
+                            </span>
 
                         </div>
 
-                        <span>
-                            Node.js
-                        </span>
+
+                        <!-- TRELLO -->
+
+                        <div class="ferramenta-item">
+
+                            <div class="ferramenta-logo-box">
+
+                                <img
+                                    class="ferramenta-logo ferramenta-logo-mono"
+                                    src="icons/trello-plain.svg"
+                                    alt="Trello"
+                                    onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original.svg';"
+                                >
+
+                            </div>
+
+                            <span>
+                                Trello
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ========================= -->
+                <!-- INTELIGÊNCIA ARTIFICIAL -->
+                <!-- ========================= -->
+
+                <div class="ferramenta-categoria">
+
+                    <h3>
+                        Inteligência Artificial
+                    </h3>
+
+
+                    <div class="ferramentas-grid">
+
+
+                        <!-- CLAUDE -->
+
+                        <div class="ferramenta-item">
+
+                            <div class="ferramenta-logo-box">
+
+                                <svg
+                                    class="ia-logo claude-logo"
+                                    viewBox="0 0 64 64"
+                                    aria-label="Claude"
+                                    role="img"
+                                >
+
+                                    <path
+                                        d="M32 7
+                                           L37 24
+                                           L54 19
+                                           L42 32
+                                           L57 40
+                                           L39 39
+                                           L42 57
+                                           L32 43
+                                           L22 57
+                                           L25 39
+                                           L7 40
+                                           L22 32
+                                           L10 19
+                                           L27 24
+                                           Z"
+                                    ></path>
+
+                                </svg>
+
+                            </div>
+
+                            <span>
+                                Claude
+                            </span>
+
+                        </div>
+
+
+                        <!-- CHATGPT -->
+
+                        <div class="ferramenta-item">
+
+                            <div class="ferramenta-logo-box">
+
+                                <svg
+                                    class="ia-logo chatgpt-logo"
+                                    viewBox="0 0 64 64"
+                                    aria-label="ChatGPT"
+                                    role="img"
+                                >
+
+                                    <path
+                                        d="M54.6 27.2
+                                           C54.6 19.3 48.2 13 40.3 13
+                                           C37.6 13 35.1 13.7 32.9 15
+                                           C30.1 10.6 25.2 8 20 8
+                                           C12.1 8 5.7 14.4 5.7 22.3
+                                           C5.7 25 6.4 27.5 7.7 29.7
+                                           C3.3 32.5 0.7 37.4 0.7 42.6
+                                           C0.7 50.5 7.1 56.9 15 56.9
+                                           C17.7 56.9 20.2 56.2 22.4 54.9
+                                           C25.2 59.3 30.1 61.9 35.3 61.9
+                                           C43.2 61.9 49.6 55.5 49.6 47.6
+                                           C49.6 44.9 48.9 42.4 47.6 40.2
+                                           C52 37.4 54.6 32.5 54.6 27.2Z"
+                                    ></path>
+
+                                    <path
+                                        d="M32 15
+                                           L42 20.8
+                                           V32.4
+                                           L32 38.2
+                                           L22 32.4
+                                           V20.8
+                                           Z"
+                                    ></path>
+
+                                    <path
+                                        d="M22 20.8
+                                           L12 26.6
+                                           V38.2
+                                           L22 44"
+                                    ></path>
+
+                                    <path
+                                        d="M42 20.8
+                                           L52 26.6
+                                           V38.2
+                                           L42 44"
+                                    ></path>
+
+                                    <path
+                                        d="M22 32.4
+                                           L32 38.2
+                                           V49.8
+                                           L22 55.6"
+                                    ></path>
+
+                                    <path
+                                        d="M42 32.4
+                                           L32 38.2"
+                                    ></path>
+
+                                </svg>
+
+                            </div>
+
+                            <span>
+                                ChatGPT
+                            </span>
+
+                        </div>
+
+
+                        <!-- GEMINI -->
+
+                        <div class="ferramenta-item">
+
+                            <div class="ferramenta-logo-box">
+
+                                <img
+                                    class="ferramenta-logo ferramenta-logo-mono"
+                                    src="icons/gemini.svg"
+                                    alt="Gemini"
+                                >
+
+                            </div>
+
+                            <span>
+                                Gemini
+                            </span>
+
+                        </div>
 
                     </div>
 
@@ -742,534 +1149,155 @@
 
             </div>
 
-
-            <!-- ========================= -->
-            <!-- DESIGN -->
-            <!-- ========================= -->
-
-            <div class="ferramenta-categoria">
-
-                <h3>
-                    Design
-                </h3>
+        </section>
 
 
-                <div class="ferramentas-grid">
+        <!-- ========================= -->
+        <!-- CONTATO -->
+        <!-- ========================= -->
 
+        <section
+            class="janela"
+            id="janela-contato"
+        >
 
-                    <!-- FIGMA -->
+            <div class="janela-barra">
 
-                    <div class="ferramenta-item">
+                <div class="janela-titulo">
+                    FORMAS DE CONTATO
+                </div>
 
-                        <div class="ferramenta-logo-box">
+                <div class="janela-controles">
 
-                            <svg
-                                class="figma-logo"
-                                viewBox="0 0 38 56"
-                                aria-label="Figma"
-                                role="img"
-                            >
+                    <button
+                        type="button"
+                        onclick="minimizarJanela('contato')"
+                        title="Minimizar"
+                    >
+                        −
+                    </button>
 
-                                <path
-                                    d="M9.5 0
-                                       C4.25 0 0 4.25 0 9.5
-                                       C0 14.75 4.25 19 9.5 19
-                                       H19V0H9.5Z"
-                                    fill="#F24E1E"
-                                ></path>
-
-                                <path
-                                    d="M19 0
-                                       H28.5
-                                       C33.75 0 38 4.25 38 9.5
-                                       C38 14.75 33.75 19 28.5 19
-                                       H19V0Z"
-                                    fill="#FF7262"
-                                ></path>
-
-                                <path
-                                    d="M9.5 19
-                                       H19V38
-                                       H9.5
-                                       C4.25 38 0 33.75 0 28.5
-                                       C0 23.25 4.25 19 9.5 19Z"
-                                    fill="#A259FF"
-                                ></path>
-
-                                <path
-                                    d="M19 19
-                                       H28.5
-                                       C33.75 19 38 23.25 38 28.5
-                                       C38 33.75 33.75 38 28.5 38
-                                       H19V19Z"
-                                    fill="#1ABCFE"
-                                ></path>
-
-                                <path
-                                    d="M9.5 38
-                                       H19V47.5
-                                       C19 52.2 15.2 56 10.5 56
-                                       C4.7 56 0 51.3 0 45.5
-                                       C0 41.35 3.35 38 7.5 38
-                                       H9.5Z"
-                                    fill="#0ACF83"
-                                ></path>
-
-                            </svg>
-
-                        </div>
-
-                        <span>
-                            Figma
-                        </span>
-
-                    </div>
-
-
-                    <!-- CANVA -->
-
-                    <div class="ferramenta-item">
-
-                        <div class="ferramenta-logo-box">
-
-                            <img
-                                class="ferramenta-logo"
-                                src="icons/canva.svg"
-                                alt="Canva"
-                            >
-
-                        </div>
-
-                        <span>
-                            Canva
-                        </span>
-
-                    </div>
+                    <button
+                        type="button"
+                        onclick="fecharJanela('contato')"
+                        title="Fechar"
+                    >
+                        ×
+                    </button>
 
                 </div>
 
             </div>
 
 
-            <!-- ========================= -->
-            <!-- DEPLOY -->
-            <!-- ========================= -->
+            <div class="janela-conteudo contato-conteudo">
 
-            <div class="ferramenta-categoria">
-
-                <h3>
-                    Deploy
-                </h3>
+                <div class="contato-lista">
 
 
-                <div class="ferramentas-grid">
+                    <a
+                        href="mailto:Luisafapaula@gmail.com"
+                        class="contato-link"
+                    >
 
-
-                    <div class="ferramenta-item">
-
-                        <div class="ferramenta-logo-box">
-
-                            <img
-                                class="ferramenta-logo"
-                                src="icons/vercel.svg"
-                                alt="Vercel"
-                            >
-
-                        </div>
-
-                        <span>
-                            Vercel
+                        <span class="contato-label">
+                            E-MAIL
                         </span>
 
-                    </div>
-
-
-                    <div class="ferramenta-item">
-
-                        <div class="ferramenta-logo-box">
-
-                            <img
-                                class="ferramenta-logo"
-                                src="icons/github-pages.svg"
-                                alt="GitHub Pages"
-                            >
-
-                        </div>
-
                         <span>
-                            GitHub Pages
+                            Luisafapaula@gmail.com
                         </span>
 
-                    </div>
+                    </a>
+
+
+                    <a
+                        href="https://github.com/MariaLuisaAmaral"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contato-link"
+                    >
+
+                        <span class="contato-label">
+                            GITHUB
+                        </span>
+
+                        <span>
+                            GitHub — MariaLuisaAmaral
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="https://www.linkedin.com/in/maria-luisa-ferreira-amaral-de-paula-30a4293a4/?isSelfProfile=true"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contato-link"
+                    >
+
+                        <span class="contato-label">
+                            LINKEDIN
+                        </span>
+
+                        <span>
+                            LinkedIn — Maria Luisa Ferreira Amaral de Paula
+                        </span>
+
+                    </a>
 
                 </div>
 
             </div>
 
-
-            <!-- ========================= -->
-            <!-- ORGANIZAÇÃO -->
-            <!-- ========================= -->
-
-            <div class="ferramenta-categoria">
-
-                <h3>
-                    Organização
-                </h3>
+        </section>
 
 
-                <div class="ferramentas-grid">
+        <!-- ========================= -->
+        <!-- BARRA INFERIOR -->
+        <!-- ========================= -->
 
+        <div class="status-bar">
 
-                    <div class="ferramenta-item">
+            <span class="status-dot"></span>
 
-                        <div class="ferramenta-logo-box">
+            <span>
+                SYSTEM ONLINE
+            </span>
 
-                            <img
-                                class="ferramenta-logo"
-                                src="icons/notion.svg"
-                                alt="Notion"
-                            >
+            <span class="divisor">
+                |
+            </span>
 
-                        </div>
+            <span>
+                FRONT-END DEVELOPER
+            </span>
 
-                        <span>
-                            Notion
-                        </span>
+            <span class="divisor">
+                |
+            </span>
 
-                    </div>
+            <span>
+                HTML5 / CSS3 / JAVASCRIPT
+            </span>
 
+            <span class="divisor">
+                |
+            </span>
 
-                    <div class="ferramenta-item">
+            <span>
+                STATUS: ACTIVE
+            </span>
 
-                        <div class="ferramenta-logo-box">
+            <span class="divisor">
+                |
+            </span>
 
-                            <img
-                                class="ferramenta-logo"
-                                src="icons/trello.svg"
-                                alt="Trello"
-                            >
-
-                        </div>
-
-                        <span>
-                            Trello
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- ========================= -->
-            <!-- INTELIGÊNCIA ARTIFICIAL -->
-            <!-- ========================= -->
-
-            <div class="ferramenta-categoria">
-
-                <h3>
-                    Inteligência Artificial
-                </h3>
-
-
-                <div class="ferramentas-grid">
-
-
-                    <!-- CLAUDE -->
-
-                    <div class="ferramenta-item">
-
-                        <div class="ferramenta-logo-box">
-
-                            <svg
-                                class="ia-logo claude-logo"
-                                viewBox="0 0 64 64"
-                                aria-label="Claude"
-                                role="img"
-                            >
-
-                                <path
-                                    d="M32 7
-                                       L37 24
-                                       L54 19
-                                       L42 32
-                                       L57 40
-                                       L39 39
-                                       L42 57
-                                       L32 43
-                                       L22 57
-                                       L25 39
-                                       L7 40
-                                       L22 32
-                                       L10 19
-                                       L27 24
-                                       Z"
-                                ></path>
-
-                            </svg>
-
-                        </div>
-
-                        <span>
-                            Claude
-                        </span>
-
-                    </div>
-
-
-                    <!-- CHATGPT -->
-
-                    <div class="ferramenta-item">
-
-                        <div class="ferramenta-logo-box">
-
-                            <svg
-                                class="ia-logo chatgpt-logo"
-                                viewBox="0 0 64 64"
-                                aria-label="ChatGPT"
-                                role="img"
-                            >
-
-                                <path
-                                    d="M54.6 27.2
-                                       C54.6 19.3 48.2 13 40.3 13
-                                       C37.6 13 35.1 13.7 32.9 15
-                                       C30.1 10.6 25.2 8 20 8
-                                       C12.1 8 5.7 14.4 5.7 22.3
-                                       C5.7 25 6.4 27.5 7.7 29.7
-                                       C3.3 32.5 0.7 37.4 0.7 42.6
-                                       C0.7 50.5 7.1 56.9 15 56.9
-                                       C17.7 56.9 20.2 56.2 22.4 54.9
-                                       C25.2 59.3 30.1 61.9 35.3 61.9
-                                       C43.2 61.9 49.6 55.5 49.6 47.6
-                                       C49.6 44.9 48.9 42.4 47.6 40.2
-                                       C52 37.4 54.6 32.5 54.6 27.2Z"
-                                ></path>
-
-                                <path
-                                    d="M32 15
-                                       L42 20.8
-                                       V32.4
-                                       L32 38.2
-                                       L22 32.4
-                                       V20.8
-                                       Z"
-                                ></path>
-
-                                <path
-                                    d="M22 20.8
-                                       L12 26.6
-                                       V38.2
-                                       L22 44"
-                                ></path>
-
-                                <path
-                                    d="M42 20.8
-                                       L52 26.6
-                                       V38.2
-                                       L42 44"
-                                ></path>
-
-                                <path
-                                    d="M22 32.4
-                                       L32 38.2
-                                       V49.8
-                                       L22 55.6"
-                                ></path>
-
-                                <path
-                                    d="M42 32.4
-                                       L32 38.2"
-                                ></path>
-
-                            </svg>
-
-                        </div>
-
-                        <span>
-                            ChatGPT
-                        </span>
-
-                    </div>
-
-
-                    <!-- GEMINI -->
-
-                    <div class="ferramenta-item">
-
-                        <div class="ferramenta-logo-box">
-
-                            <img
-                                class="ferramenta-logo"
-                                src="icons/gemini.svg"
-                                alt="Gemini"
-                            >
-
-                        </div>
-
-                        <span>
-                            Gemini
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
+            <span id="relogio">
+                00:00:00
+            </span>
 
         </div>
-
-    </section>
-
-
-    <!-- ========================= -->
-    <!-- CONTATO -->
-    <!-- ========================= -->
-
-    <section
-        class="janela"
-        id="janela-contato"
-    >
-
-        <div class="janela-barra">
-
-            <div class="janela-titulo">
-                FORMAS DE CONTATO
-            </div>
-
-            <div class="janela-controles">
-
-                <button
-                    type="button"
-                    onclick="minimizarJanela('contato')"
-                    title="Minimizar"
-                >
-                    −
-                </button>
-
-                <button
-                    type="button"
-                    onclick="fecharJanela('contato')"
-                    title="Fechar"
-                >
-                    ×
-                </button>
-
-            </div>
-
-        </div>
-
-
-        <div class="janela-conteudo contato-conteudo">
-
-            <div class="contato-lista">
-
-
-                <a
-                    href="mailto:Luisafapaula@gmail.com"
-                    class="contato-link"
-                >
-
-                    <span class="contato-label">
-                        E-MAIL
-                    </span>
-
-                    <span>
-                        Luisafapaula@gmail.com
-                    </span>
-
-                </a>
-
-
-                <a
-                    href="https://github.com/MariaLuisaAmaral"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="contato-link"
-                >
-
-                    <span class="contato-label">
-                        GITHUB
-                    </span>
-
-                    <span>
-                        GitHub — MariaLuisaAmaral
-                    </span>
-
-                </a>
-
-
-                <a
-                    href="https://www.linkedin.com/in/maria-luisa-ferreira-amaral-de-paula-30a4293a4/?isSelfProfile=true"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="contato-link"
-                >
-
-                    <span class="contato-label">
-                        LINKEDIN
-                    </span>
-
-                    <span>
-                        LinkedIn — Maria Luisa Ferreira Amaral de Paula
-                    </span>
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ========================= -->
-    <!-- BARRA INFERIOR -->
-    <!-- ========================= -->
-
-    <div class="status-bar">
-
-        <span class="status-dot"></span>
-
-        <span>
-            SYSTEM ONLINE
-        </span>
-
-        <span class="divisor">
-            |
-        </span>
-
-        <span>
-            FRONT-END DEVELOPER
-        </span>
-
-        <span class="divisor">
-            |
-        </span>
-
-        <span>
-            HTML5 / CSS3 / JAVASCRIPT
-        </span>
-
-        <span class="divisor">
-            |
-        </span>
-
-        <span>
-            STATUS: ACTIVE
-        </span>
-
-        <span class="divisor">
-            |
-        </span>
-
-        <span id="relogio">
-            00:00:00
-        </span>
-
-    </div>
 
 
     <script src="script.js"></script>
