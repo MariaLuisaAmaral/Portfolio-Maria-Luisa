@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio | Maria Luisa</title>
+
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- FUNDO -->
+    <!-- ========================= -->
+
+    <div class="circuit-bg" aria-hidden="true"></div>
+
+
+    <main class="container">
+
+
+        <!-- ========================= -->
+        <!-- CABEÇALHO -->
+        <!-- ========================= -->
+
+        <header class="painel painel-header">
+
+            <div class="canto canto-tl"></div>
+            <div class="canto canto-tr"></div>
+            <div class="canto canto-bl"></div>
+            <div class="canto canto-br"></div>
+
+            <h1>
+                Maria Luisa Ferreira Amaral de Paula
+            </h1>
+
+            <div class="intro">
+                <p>
+                    <i>
+                        Futura estudante de Sistemas de Informação
+                        e desenvolvedora Front-End em formação.
+                    </i>
+                </p>
+            </div>
+
+        </header>
+
+
+        <!-- ========================= -->
+        <!-- TERMINAL -->
+        <!-- ========================= -->
+
+        <div
+            class="painel painel-terminal"
+            aria-hidden="true"
+        >
+
+            <span class="seta">
+                »
+            </span>
+
+            <div class="terminal-fita">
+
+                <span class="terminal-track">
+
+                    01 10 11 00 01 10 6D 61 72 69 61
+                    20 6C 75 69 73 61 20 00 11 01 10
+                    00 11 01 10 00 11 01 10
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+
+                    01 10 11 00 01 10 6D 61 72 69 61
+                    20 6C 75 69 73 61 20 00 11 01 10
+                    00 11 01 10 00 11 01 10
+
+                </span>
+
+            </div>
+
+            <span class="seta">
+                «
+            </span>
+
+        </div>
+
+
+        <!-- ========================= -->
+        <!-- MENU -->
+        <!-- ========================= -->
+
+        <nav class="painel painel-menu menu">
+
+
+            <!-- SOBRE -->
+
+            <button
+                type="button"
+                id="botao-sobre"
+                class="ativo"
+                onclick="mostrarPagina('sobre')"
+            >
+
+                <svg
+                    class="icone"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+
+                    <circle
+                        cx="12"
+                        cy="8"
+                        r="3.4"
+                    ></circle>
+
+                    <path
+                        d="M5 20c1.2-4 4.2-6 7-6s5.8 2 7 6"
+                    ></path>
+
+                </svg>
+
+                <span>
+                    Sobre mim
+                </span>
+
+            </button>
+
+
+            <!-- PROJETOS -->
+
+            <button
+                type="button"
+                id="botao-projetos"
+                onclick="mostrarPagina('projetos')"
+            >
+
+                <svg
+                    class="icone"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+
+                    <path d="M8 6 3 12l5 6"></path>
+                    <path d="M16 6l5 6-5 6"></path>
+                    <path d="M13.5 4.5 10.5 19.5"></path>
+
+                </svg>
+
+                <span>
+                    Projetos
+                </span>
+
+            </button>
+
+
+            <!-- HABILIDADES -->
+
+            <button
+                type="button"
+                id="botao-habilidades"
+                onclick="abrirJanela('habilidades')"
+            >
+
+                <svg
+                    class="icone"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+
+                    <rect
+                        x="8"
+                        y="8"
+                        width="8"
+                        height="8"
+                    ></rect>
+
+                    <path
+                        d="M8 4v4M16 4v4M8 16v4M16 16v4M4 8h4M4 16h4M16 8h4M16 16h4"
+                    ></path>
+
+                </svg>
+
+                <span>
+                    Habilidades
+                </span>
+
+            </button>
+
+
+            <!-- FERRAMENTAS -->
+
+            <button
+                type="button"
+                id="botao-ferramentas"
+                onclick="abrirJanela('ferramentas')"
+            >
+
+                <svg
+                    class="icone"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+
+                    <path
+                        d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17v3h3l5.3-5.3a4 4 0 0 0 5.4-5.4l-2.2 2.2-2.1-2.1z"
+                    ></path>
+
+                </svg>
+
+                <span>
+                    Ferramentas
+                </span>
+
+            </button>
+
+
+            <!-- CONTATO -->
+
+            <button
+                type="button"
+                id="botao-contato"
+                onclick="abrirJanela('contato')"
+            >
+
+                <svg
+                    class="icone"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+
+                    <rect
+                        x="3"
+                        y="5"
+                        width="18"
+                        height="14"
+                        rx="2"
+                    ></rect>
+
+                    <path
+                        d="m4 7 8 6 8-6"
+                    ></path>
+
+                </svg>
+
+                <span>
+                    Formas de contato
+                </span>
+
+            </button>
+
+        </nav>
+
+
+        <!-- ========================= -->
+        <!-- PAINEL PRINCIPAL -->
+        <!-- ========================= -->
+
+        <section
+            class="painel painel-principal"
+            id="painel-principal"
+        >
+
+            <div class="canto canto-tl"></div>
+            <div class="canto canto-tr"></div>
+            <div class="canto canto-bl"></div>
+            <div class="canto canto-br"></div>
+
+
+            <!-- ========================= -->
+            <!-- SOBRE MIM -->
+            <!-- ========================= -->
+
+            <div
+                id="pagina-sobre"
+                class="pagina pagina-ativa"
+            >
+
+                <div class="sobre-container">
+
+                    <div class="sobre-imagem">
+
+                        <img
+                            src="foto-perfil.jpeg"
+                            alt="Foto de Maria Luisa"
+                        >
+
+                    </div>
+
+
+                    <div class="sobre-texto">
+
+                        <h2>
+                            Sobre mim
+                        </h2>
+
+
+                        <p>
+                            Sou uma desenvolvedora Front-End em formação,
+                            interessada em transformar ideias em interfaces
+                            funcionais, intuitivas e visualmente bem estruturadas.
+                        </p>
+
+
+                        <p>
+                            Meu interesse pela área surgiu da combinação entre
+                            programação, design e experiência do usuário. Gosto
+                            de entender não apenas como uma aplicação funciona,
+                            mas também como ela pode proporcionar uma boa
+                            experiência para quem a utiliza.
+                        </p>
+
+
+                        <p>
+                            Atualmente, estou aprimorando meus conhecimentos em
+                            HTML5, CSS3, JavaScript, ECMAScript e GitHub por meio
+                            de cursos como o CS50 de Harvard, a Codecademy, o
+                            Curso completo e atual de HTML5 e CSS3 e o Curso
+                            Grátis de JavaScript e ECMAScript para Iniciantes.
+                        </p>
+
+
+                        <p>
+                            Tenho como principais características a criatividade,
+                            organização, curiosidade, facilidade para aprender e
+                            atenção aos detalhes.
+                        </p>
+
+
+                        <p>
+                            Quando começo a aprender algo novo, procuro
+                            compreender seus fundamentos para conseguir aplicar
+                            esse conhecimento de forma independente.
+                        </p>
+
+
+                        <p>
+                            Meu objetivo é atuar como Front-End Developer e,
+                            futuramente, trabalhar como freelancer em diferentes
+                            projetos, desenvolvendo interfaces responsivas e
+                            acessíveis que unam tecnologia, design e uma boa
+                            experiência do usuário.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ========================= -->
+            <!-- PROJETOS -->
+            <!-- ========================= -->
+
+            <div
+                id="pagina-projetos"
+                class="pagina"
+            >
+
+                <div class="projetos-layout">
+
+
+                    <aside class="projetos-abas">
+
+                        <div class="projetos-titulo">
+                            PROJETOS
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="projeto-tab ativo"
+                            id="projeto-tab-1"
+                            onclick="selecionarProjeto(1)"
+                        >
+                            Projeto 01
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="projeto-tab"
+                            id="projeto-tab-2"
+                            onclick="selecionarProjeto(2)"
+                        >
+                            Projeto 02
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="projeto-tab"
+                            id="projeto-tab-3"
+                            onclick="selecionarProjeto(3)"
+                        >
+                            Projeto 03
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="projeto-tab"
+                            id="projeto-tab-4"
+                            onclick="selecionarProjeto(4)"
+                        >
+                            Projeto 04
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="projeto-tab"
+                            id="projeto-tab-5"
+                            onclick="selecionarProjeto(5)"
+                        >
+                            Projeto 05
+                        </button>
+
+                    </aside>
+
+
+                    <div class="projetos-conteudo">
+
+
+                        <article
+                            id="projeto-1"
+                            class="projeto-conteudo ativo"
+                        >
+
+                            <span class="projeto-numero">
+                                01
+                            </span>
+
+                            <h2>
+                                Projeto 01
+                            </h2>
+
+                            <p>
+                                Adicione aqui as informações do seu primeiro projeto.
+                            </p>
+
+                        </article>
+
+
+                        <article
+                            id="projeto-2"
+                            class="projeto-conteudo"
+                        >
+
+                            <span class="projeto-numero">
+                                02
+                            </span>
+
+                            <h2>
+                                Projeto 02
+                            </h2>
+
+                            <p>
+                                Adicione aqui as informações do seu segundo projeto.
+                            </p>
+
+                        </article>
+
+
+                        <article
+                            id="projeto-3"
+                            class="projeto-conteudo"
+                        >
+
+                            <span class="projeto-numero">
+                                03
+                            </span>
+
+                            <h2>
+                                Projeto 03
+                            </h2>
+
+                            <p>
+                                Adicione aqui as informações do seu terceiro projeto.
+                            </p>
+
+                        </article>
+
+
+                        <article
+                            id="projeto-4"
+                            class="projeto-conteudo"
+                        >
+
+                            <span class="projeto-numero">
+                                04
+                            </span>
+
+                            <h2>
+                                Projeto 04
+                            </h2>
+
+                            <p>
+                                Adicione aqui as informações do seu quarto projeto.
+                            </p>
+
+                        </article>
+
+
+                        <article
+                            id="projeto-5"
+                            class="projeto-conteudo"
+                        >
+
+                            <span class="projeto-numero">
+                                05
+                            </span>
+
+                            <h2>
+                                Projeto 05
+                            </h2>
+
+                            <p>
+                                Adicione aqui as informações do seu quinto projeto.
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================= -->
+    <!-- JANELA HABILIDADES -->
+    <!-- ========================= -->
+
+    <section
+        class="janela"
+        id="janela-habilidades"
+    >
+
+        <div class="janela-barra">
+
+            <div class="janela-titulo">
+                HABILIDADES
+            </div>
+
+            <div class="janela-controles">
+
+                <button
+                    type="button"
+                    onclick="minimizarJanela('habilidades')"
+                    title="Minimizar"
+                >
+                    −
+                </button>
+
+                <button
+                    type="button"
+                    onclick="fecharJanela('habilidades')"
+                    title="Fechar"
+                >
+                    ×
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="janela-conteudo">
+
+            <div class="habilidades-lista">
+
+                <p>
+                    HTML5
+                </p>
+
+                <p>
+                    CSS3
+                </p>
+
+                <p>
+                    JavaScript
+                </p>
+
+                <p>
+                    ECMAScript
+                </p>
+
+                <p>
+                    GitHub
+                </p>
+
+                <p>
+                    Inglês — C1
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- JANELA FERRAMENTAS -->
+    <!-- ========================= -->
+
+    <section
+        class="janela janela-ferramentas"
+        id="janela-ferramentas"
+    >
+
+        <div class="janela-barra">
+
+            <div class="janela-titulo">
+                FERRAMENTAS
+            </div>
+
+            <div class="janela-controles">
+
+                <button
+                    type="button"
+                    onclick="minimizarJanela('ferramentas')"
+                    title="Minimizar"
+                >
+                    −
+                </button>
+
+                <button
+                    type="button"
+                    onclick="fecharJanela('ferramentas')"
+                    title="Fechar"
+                >
+                    ×
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="janela-conteudo ferramentas-conteudo">
+
+
+            <!-- ========================= -->
+            <!-- DESENVOLVIMENTO -->
+            <!-- ========================= -->
+
+            <div class="ferramenta-categoria">
+
+                <h3>
+                    Desenvolvimento
+                </h3>
+
+
+                <div class="ferramentas-grid">
+
+
+                    <div class="ferramenta-item">
+
+                        <div class="ferramenta-logo-box">
+
+                            <img
+                                class="ferramenta-logo"
+                                src="icons/vscode.svg"
+                                alt="Visual Studio Code"
+                            >
+
+                        </div>
+
+                        <span>
+                            Visual Studio Code
+                        </span>
+
+                    </div>
+
+
+                    <div class="ferramenta-item">
+
+                        <div class="ferramenta-logo-box">
+
+                            <img
+                                class="ferramenta-logo"
+                                src="icons/github.svg"
+                                alt="GitHub"
+                            >
+
+                        </div>
+
+                        <span>
+                            GitHub
+                        </span>
+
+                    </div>
+
+
+                    <div class="ferramenta-item">
+
+                        <div class="ferramenta-logo-box">
+
+                            <img
+                                class="ferramenta-logo"
+                                src="icons/github-desktop.svg"
+                                alt="GitHub Desktop"
+                            >
+
+                        </div>
+
+                        <span>
+                            GitHub Desktop
+                        </span>
+
+                    </div>
+
+
+                    <div class="ferramenta-item">
+
+                        <div class="ferramenta-logo-box">
+
+                            <img
+                                class="ferramenta-logo"
+                                src="icons/nodejs.svg"
+                                alt="Node.js"
+                            >
+
+                        </div>
+
+                        <span>
+                            Node.js
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ========================= -->
+            <!-- DESIGN -->
+            <!-- ========================= -->
+
+            <div class="ferramenta-categoria">
+
+                <h3>
+                    Design
+                </h3>
+
+
+                <div class="ferramentas-grid">
+
+
+                    <!-- FIGMA -->
+
+                    <div class="ferramenta-item">
+
+                        <div class="ferramenta-logo-box">
+
+                            <svg
+                                class="figma-logo"
+                                viewBox="0 0 38 56"
+                                aria-label="Figma"
+                                role="img"
+                            >
+
+                                <path
+                                    d="M9.5 0
+                                       C4.25 0 0 4.25 0 9.5
+                                       C0 14.75 4.25 19 9.5 19
+                                       H19V0H9.5Z"
+                                    fill="#F24E1E"
+                                ></path>
+
+                                <path
+                                    d="M19 0
+                                       H28.5
+                                       C33.75 0 38 4.25 38 9.5
+                                       C38 14.75 33.75 19 28.5 19
+                                       H19V0Z"
+                                    fill="#FF7262"
+                                ></path>
+
+                                <path
+                                    d="M9.5 19
+                                       H19V38
+                                       H9.5
+                                       C4.25 38 0 33.75 0 28.5
+                                       C0 23.25 4.25 19 9.5 19Z"
+                                    fill="#A259FF"
+                                ></path>
+
+                                <path
+                                    d="M19 19
+                                       H28.5
+                                       C33.75 19 38 23.25 38 28.5
+                                       C38 33.75 33.75 38 28.5 38
+                                       H19V19Z"
+                                    fill="#1ABCFE"
+                                ></path>
+
+                                <path
+                                    d="M9.5 38
+                                       H19V47.5
+                                       C19 52.2 15.2 56 10.5 56
+                                       C4.7 56 0 51.3 0 45.5
+                                       C0 41.35 3.35 38 7.5 38
+                                       H9.5Z"
+                                    fill="#0ACF83"
+                                ></path>
+
+                            </svg>
+
+                        </div>
+
+                        <span>
+                            Figma
+                        </span>
+
+                    </div>
+
+
+                    <!-- CANVA -->
+
+                    <div class="ferramenta-item">
+
+                        <div class="ferramenta-logo-box">
+
+                            <img
+                                class="ferramenta-logo"
+                                src="icons/canva.svg"
+                                alt="Canva"
+                            >
+
+                        </div>
+
+                        <span>
+                            Canva
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ========================= -->
+            <!-- DEPLOY -->
+            <!-- ========================= -->
+
+            <div class="ferramenta-categoria">
+
+                <h3>
+                    Deploy
+                </h3>
+
+
+                <div class="ferramentas-grid">
+
+
+                    <div class="ferramenta-item">
+
+                        <div class="ferramenta-logo-box">
+
+                            <img
+                                class="ferramenta-logo"
+                                src="icons/vercel.svg"
+                                alt="Vercel"
+                            >
+
+                        </div>
+
+                        <span>
+                            Vercel
+                        </span>
+
+                    </div>
+
+
+                    <div class="ferramenta-item">
+
+                        <div class="ferramenta-logo-box">
+
+                            <img
+                                class="ferramenta-logo"
+                                src="icons/github-pages.svg"
+                                alt="GitHub Pages"
+                            >
+
+                        </div>
+
+                        <span>
+                            GitHub Pages
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ========================= -->
+            <!-- ORGANIZAÇÃO -->
+            <!-- ========================= -->
+
+            <div class="ferramenta-categoria">
+
+                <h3>
+                    Organização
+                </h3>
+
+
+                <div class="ferramentas-grid">
+
+
+                    <div class="ferramenta-item">
+
+                        <div class="ferramenta-logo-box">
+
+                            <img
+                                class="ferramenta-logo"
+                                src="icons/notion.svg"
+                                alt="Notion"
+                            >
+
+                        </div>
+
+                        <span>
+                            Notion
+                        </span>
+
+                    </div>
+
+
+                    <div class="ferramenta-item">
+
+                        <div class="ferramenta-logo-box">
+
+                            <img
+                                class="ferramenta-logo"
+                                src="icons/trello.svg"
+                                alt="Trello"
+                            >
+
+                        </div>
+
+                        <span>
+                            Trello
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ========================= -->
+            <!-- INTELIGÊNCIA ARTIFICIAL -->
+            <!-- ========================= -->
+
+            <div class="ferramenta-categoria">
+
+                <h3>
+                    Inteligência Artificial
+                </h3>
+
+
+                <div class="ferramentas-grid">
+
+
+                    <!-- CLAUDE -->
+
+                    <div class="ferramenta-item">
+
+                        <div class="ferramenta-logo-box">
+
+                            <svg
+                                class="ia-logo claude-logo"
+                                viewBox="0 0 64 64"
+                                aria-label="Claude"
+                                role="img"
+                            >
+
+                                <path
+                                    d="M32 7
+                                       L37 24
+                                       L54 19
+                                       L42 32
+                                       L57 40
+                                       L39 39
+                                       L42 57
+                                       L32 43
+                                       L22 57
+                                       L25 39
+                                       L7 40
+                                       L22 32
+                                       L10 19
+                                       L27 24
+                                       Z"
+                                ></path>
+
+                            </svg>
+
+                        </div>
+
+                        <span>
+                            Claude
+                        </span>
+
+                    </div>
+
+
+                    <!-- CHATGPT -->
+
+                    <div class="ferramenta-item">
+
+                        <div class="ferramenta-logo-box">
+
+                            <svg
+                                class="ia-logo chatgpt-logo"
+                                viewBox="0 0 64 64"
+                                aria-label="ChatGPT"
+                                role="img"
+                            >
+
+                                <path
+                                    d="M54.6 27.2
+                                       C54.6 19.3 48.2 13 40.3 13
+                                       C37.6 13 35.1 13.7 32.9 15
+                                       C30.1 10.6 25.2 8 20 8
+                                       C12.1 8 5.7 14.4 5.7 22.3
+                                       C5.7 25 6.4 27.5 7.7 29.7
+                                       C3.3 32.5 0.7 37.4 0.7 42.6
+                                       C0.7 50.5 7.1 56.9 15 56.9
+                                       C17.7 56.9 20.2 56.2 22.4 54.9
+                                       C25.2 59.3 30.1 61.9 35.3 61.9
+                                       C43.2 61.9 49.6 55.5 49.6 47.6
+                                       C49.6 44.9 48.9 42.4 47.6 40.2
+                                       C52 37.4 54.6 32.5 54.6 27.2Z"
+                                ></path>
+
+                                <path
+                                    d="M32 15
+                                       L42 20.8
+                                       V32.4
+                                       L32 38.2
+                                       L22 32.4
+                                       V20.8
+                                       Z"
+                                ></path>
+
+                                <path
+                                    d="M22 20.8
+                                       L12 26.6
+                                       V38.2
+                                       L22 44"
+                                ></path>
+
+                                <path
+                                    d="M42 20.8
+                                       L52 26.6
+                                       V38.2
+                                       L42 44"
+                                ></path>
+
+                                <path
+                                    d="M22 32.4
+                                       L32 38.2
+                                       V49.8
+                                       L22 55.6"
+                                ></path>
+
+                                <path
+                                    d="M42 32.4
+                                       L32 38.2"
+                                ></path>
+
+                            </svg>
+
+                        </div>
+
+                        <span>
+                            ChatGPT
+                        </span>
+
+                    </div>
+
+
+                    <!-- GEMINI -->
+
+                    <div class="ferramenta-item">
+
+                        <div class="ferramenta-logo-box">
+
+                            <img
+                                class="ferramenta-logo"
+                                src="icons/gemini.svg"
+                                alt="Gemini"
+                            >
+
+                        </div>
+
+                        <span>
+                            Gemini
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- CONTATO -->
+    <!-- ========================= -->
+
+    <section
+        class="janela"
+        id="janela-contato"
+    >
+
+        <div class="janela-barra">
+
+            <div class="janela-titulo">
+                FORMAS DE CONTATO
+            </div>
+
+            <div class="janela-controles">
+
+                <button
+                    type="button"
+                    onclick="minimizarJanela('contato')"
+                    title="Minimizar"
+                >
+                    −
+                </button>
+
+                <button
+                    type="button"
+                    onclick="fecharJanela('contato')"
+                    title="Fechar"
+                >
+                    ×
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="janela-conteudo contato-conteudo">
+
+            <div class="contato-lista">
+
+
+                <a
+                    href="mailto:Luisafapaula@gmail.com"
+                    class="contato-link"
+                >
+
+                    <span class="contato-label">
+                        E-MAIL
+                    </span>
+
+                    <span>
+                        Luisafapaula@gmail.com
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="https://github.com/MariaLuisaAmaral"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contato-link"
+                >
+
+                    <span class="contato-label">
+                        GITHUB
+                    </span>
+
+                    <span>
+                        GitHub — MariaLuisaAmaral
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="https://www.linkedin.com/in/maria-luisa-ferreira-amaral-de-paula-30a4293a4/?isSelfProfile=true"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contato-link"
+                >
+
+                    <span class="contato-label">
+                        LINKEDIN
+                    </span>
+
+                    <span>
+                        LinkedIn — Maria Luisa Ferreira Amaral de Paula
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- BARRA INFERIOR -->
+    <!-- ========================= -->
+
+    <div class="status-bar">
+
+        <span class="status-dot"></span>
+
+        <span>
+            SYSTEM ONLINE
+        </span>
+
+        <span class="divisor">
+            |
+        </span>
+
+        <span>
+            FRONT-END DEVELOPER
+        </span>
+
+        <span class="divisor">
+            |
+        </span>
+
+        <span>
+            HTML5 / CSS3 / JAVASCRIPT
+        </span>
+
+        <span class="divisor">
+            |
+        </span>
+
+        <span>
+            STATUS: ACTIVE
+        </span>
+
+        <span class="divisor">
+            |
+        </span>
+
+        <span id="relogio">
+            00:00:00
+        </span>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
