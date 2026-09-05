@@ -486,4 +486,4 @@ https://www.linkedin.com/in/maria-luisa-ferreira-amaral-de-paula-30a4293a4/
 
 ## Preview
 
-<img width="310" height="166" alt="portfolio-preview" src="https://github.com/user-attachments/assets/edb1404c-5e73-45cf-bac7-3b38e85dd218" />
+<img width="1920" height="1032" alt="portfolio-preview" src="https://github.com/user-attachments/assets/de1b37b5-059a-48ba-a1fa-dd47229f87ae" />
