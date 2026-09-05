@@ -483,3 +483,7 @@ Não é necessário instalar pacotes ou executar um processo de build.
 
 **LinkedIn:**  
 https://www.linkedin.com/in/maria-luisa-ferreira-amaral-de-paula-30a4293a4/
+
+## Preview
+
+https://github.com/SEU-USUARIO/SEU-REPOSITORIO/blob/main/portfolio-preview.mp4
