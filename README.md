@@ -223,19 +223,6 @@ No package installation or build process is required.
 
 ---
 
-## Project Structure
-
-    Portfolio/
-    ├── icons/
-    ├── favicon-32x32.png
-    ├── foto-perfil.jpeg
-    ├── index.html
-    ├── JetBrainsMonoNL-Regular.ttf
-    ├── script.js
-    └── styles.css
-
----
-
 ## Contact
 
 **Email:** Luisafapaula@gmail.com
@@ -461,19 +448,6 @@ Abra o arquivo `index.html` diretamente no navegador.
 Para uma experiência de desenvolvimento melhor, você pode utilizar o **Visual Studio Code** com uma extensão de desenvolvimento local, como o **Live Server**.
 
 Não é necessário instalar pacotes ou executar um processo de build.
-
----
-
-## Estrutura do Projeto
-
-    Portfólio/
-    ├── icons/
-    ├── favicon-32x32.png
-    ├── foto-perfil.jpeg
-    ├── index.html
-    ├── JetBrainsMonoNL-Regular.ttf
-    ├── script.js
-    └── styles.css
 
 ---
 
