@@ -26,7 +26,7 @@ The goal was to create a portfolio that not only presents information, but also 
 
 ---
 
-## Technologies
+## Technologies of the project
 
 - HTML5
 - CSS3
@@ -35,7 +35,6 @@ The goal was to create a portfolio that not only presents information, but also 
 - GitHub
 - Visual Studio Code
 - Figma
-- JetBrains Mono
 
 ---
 
@@ -254,7 +253,7 @@ A proposta foi criar um portfólio que não apenas apresentasse informações, m
 
 ---
 
-## Tecnologias
+## Tecnologias do projeto
 
 - HTML5
 - CSS3
@@ -263,7 +262,6 @@ A proposta foi criar um portfólio que não apenas apresentasse informações, m
 - GitHub
 - Visual Studio Code
 - Figma
-- JetBrains Mono
 
 ---
 
