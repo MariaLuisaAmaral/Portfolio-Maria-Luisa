@@ -6,11 +6,12 @@ let zIndexAtual = 100;
 let janelaArrastando = null;
 
 let deslocamentoX = 0;
+
 let deslocamentoY = 0;
 
 
 /* ========================= */
-/* TROCAR PÁGINA */
+/* CHANGE PAGE */
 /* ========================= */
 
 function mostrarPagina(paginaSelecionada) {
@@ -72,7 +73,7 @@ function mostrarPagina(paginaSelecionada) {
 
 
 /* ========================= */
-/* PROJETOS */
+/* PROJECTS */
 /* ========================= */
 
 function selecionarProjeto(numero) {
@@ -132,7 +133,7 @@ function selecionarProjeto(numero) {
 
 
 /* ========================= */
-/* ABRIR JANELA */
+/* OPEN WINDOW */
 /* ========================= */
 
 function abrirJanela(nome) {
@@ -144,7 +145,9 @@ function abrirJanela(nome) {
 
 
     if (!janela) {
+
         return;
+
     }
 
 
@@ -156,15 +159,13 @@ function abrirJanela(nome) {
     );
 
 
-    trazerParaFrente(
-        janela
-    );
+    trazerParaFrente(janela);
 
 }
 
 
 /* ========================= */
-/* FECHAR JANELA */
+/* CLOSE WINDOW */
 /* ========================= */
 
 function fecharJanela(nome) {
@@ -176,7 +177,9 @@ function fecharJanela(nome) {
 
 
     if (!janela) {
+
         return;
+
     }
 
 
@@ -191,7 +194,7 @@ function fecharJanela(nome) {
 
 
 /* ========================= */
-/* MINIMIZAR JANELA */
+/* MINIMIZE WINDOW */
 /* ========================= */
 
 function minimizarJanela(nome) {
@@ -203,7 +206,9 @@ function minimizarJanela(nome) {
 
 
     if (!janela) {
+
         return;
+
     }
 
 
@@ -215,7 +220,7 @@ function minimizarJanela(nome) {
 
 
 /* ========================= */
-/* TRAZER PARA FRENTE */
+/* BRING TO FRONT */
 /* ========================= */
 
 function trazerParaFrente(janela) {
@@ -229,7 +234,7 @@ function trazerParaFrente(janela) {
 
 
 /* ========================= */
-/* INICIALIZAÇÃO */
+/* INITIALIZATION */
 /* ========================= */
 
 document
@@ -254,7 +259,7 @@ document
 
 
 /* ========================= */
-/* INICIAR ARRASTO */
+/* START DRAG */
 /* ========================= */
 
 document
@@ -278,7 +283,9 @@ function iniciarArrasto(event) {
 
 
     if (!janela) {
+
         return;
+
     }
 
 
@@ -287,7 +294,9 @@ function iniciarArrasto(event) {
             ".janela-controles"
         )
     ) {
+
         return;
+
     }
 
 
@@ -317,7 +326,7 @@ function iniciarArrasto(event) {
 
 
 /* ========================= */
-/* MOVIMENTO */
+/* MOVEMENT */
 /* ========================= */
 
 document.addEventListener(
@@ -325,7 +334,9 @@ document.addEventListener(
     function (event) {
 
         if (!janelaArrastando) {
+
             return;
+
         }
 
 
@@ -353,10 +364,8 @@ document.addEventListener(
         novaEsquerda =
             Math.max(
                 margem,
-
                 Math.min(
                     novaEsquerda,
-
                     window.innerWidth -
                     largura -
                     margem
@@ -367,10 +376,8 @@ document.addEventListener(
         novoTopo =
             Math.max(
                 margem,
-
                 Math.min(
                     novoTopo,
-
                     window.innerHeight -
                     altura -
                     55
@@ -394,7 +401,7 @@ document.addEventListener(
 
 
 /* ========================= */
-/* PARAR ARRASTO */
+/* STOP DRAG */
 /* ========================= */
 
 document.addEventListener(
@@ -408,7 +415,7 @@ document.addEventListener(
 
 
 /* ========================= */
-/* DUPLO CLIQUE */
+/* DOUBLE CLICK */
 /* ========================= */
 
 document
@@ -424,7 +431,9 @@ document
                         ".janela-controles"
                     )
                 ) {
+
                     return;
+
                 }
 
 
@@ -435,15 +444,19 @@ document
 
 
                 if (!janela) {
+
                     return;
+
                 }
 
 
                 janela.style.left =
                     "50%";
 
+
                 janela.style.top =
                     "50%";
+
 
                 janela.style.transform =
                     "translate(-50%, -50%)";
@@ -460,7 +473,7 @@ document
 
 
 /* ========================= */
-/* ESC */
+/* ESCAPE */
 /* ========================= */
 
 document.addEventListener(
@@ -470,7 +483,9 @@ document.addEventListener(
         if (
             event.key !== "Escape"
         ) {
+
             return;
+
         }
 
 
@@ -487,7 +502,9 @@ document.addEventListener(
                     janela.style.display ===
                     "none"
                 ) {
+
                     return;
+
                 }
 
 
@@ -529,7 +546,7 @@ document.addEventListener(
 
 
 /* ========================= */
-/* RELÓGIO */
+/* CLOCK */
 /* ========================= */
 
 function atualizarRelogio() {
