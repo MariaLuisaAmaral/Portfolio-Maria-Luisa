@@ -12,8 +12,6 @@ I’m Maria Luisa Ferreira Amaral de Paula, a student interested in technology, 
 
 I want to build my career as a Front-End Developer, combining programming and creativity to develop functional, accessible, and visually well-structured interfaces.
 
-Currently, I’m deepening my knowledge of web development and exploring different technologies to expand my programming skills.
-
 ---
 
 ## Introduction
@@ -458,4 +456,5 @@ https://www.linkedin.com/in/maria-luisa-ferreira-amaral-de-paula-30a4293a4/
 
 ## Preview
 
-<img width="1920" height="1032" alt="portfolio-preview" src="https://github.com/user-attachments/assets/de1b37b5-059a-48ba-a1fa-dd47229f87ae" />
+<img width="340" height="182" alt="Portfólio Maria Luisa - preview" src="https://github.com/user-attachments/assets/b218a747-d193-4d4f-bf80-1d53f4337336" />
+
