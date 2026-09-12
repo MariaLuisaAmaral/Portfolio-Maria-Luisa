@@ -3,6 +3,10 @@
 > Aspiring Front-End Developer | Technology, Design & UI/UX
 
 ---
+# Preview
+<img width="960" height="516" alt="Portfólio Maria Luisa - preview" src="https://github.com/user-attachments/assets/3a89c896-9c2e-4575-8318-a7e778de11d5" />
+
+
 
 # English
 
@@ -453,8 +457,3 @@ Não é necessário instalar pacotes ou executar um processo de build.
 
 **LinkedIn:**  
 https://www.linkedin.com/in/maria-luisa-ferreira-amaral-de-paula-30a4293a4/
-
-## Preview
-
-<img width="340" height="182" alt="Portfólio Maria Luisa - preview" src="https://github.com/user-attachments/assets/b218a747-d193-4d4f-bf80-1d53f4337336" />
-
